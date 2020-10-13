@@ -1,2 +1,2 @@
 # javarush
-Tasks from javarush
+Решенные задачи с онлайн курса javarush.ru
