@@ -3,13 +3,10 @@ package com.javarush.task.task17.task1719;
 import java.util.HashMap;
 import java.util.Map;
 
-/* 
-ApplicationContext
-*/
 
 public abstract class ApplicationContext<GenericsBean extends Bean> {
-    private Map<String, GenericsBean> container = new HashMap<String, GenericsBean>();
-    // Map<Name, some class that implements the Bean interface>
+    private Map<String, GenericsBean> container = new HashMap<>();
+    //Map<Name, some class implemented Bean interface>
 
 
     protected ApplicationContext() {

@@ -1,9 +1,5 @@
 package com.javarush.task.task16.task1615;
 
-/* 
-Аэропорт
-*/
-
 public class Solution {
     public static volatile Runway RUNWAY = new Runway();   //1 взлетная полоса
 

@@ -1,15 +1,12 @@
 package com.javarush.task.task16.task1608;
 
-/* 
-Продвижение на политических дебатах
-*/
-
 public class Solution {
     public static int totalSpeechCount = 200;
     public static int utterancesPerSpeech = 1000000;
 
     public static void main(String[] args) throws InterruptedException {
         Politician ivanov = new Politician("Иванов");
+        ivanov.join();
         Politician petrov = new Politician("Петров");
         Politician sidorov = new Politician("Сидоров");
 
@@ -44,5 +41,5 @@ public class Solution {
             return String.format("%s сказал речь %d раз", getName(), getSpeechCount());
         }
     }
-}
 
+}

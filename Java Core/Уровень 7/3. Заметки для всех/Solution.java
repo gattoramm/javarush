@@ -3,9 +3,6 @@ package com.javarush.task.task17.task1708;
 import java.util.ArrayList;
 import java.util.List;
 
-/* 
-Заметки для всех
-*/
 
 public class Solution {
 
@@ -15,7 +12,7 @@ public class Solution {
 
     public static class Note {
 
-        volatile public List<String> notes = new ArrayList<String>();
+        public volatile List<String> notes = new ArrayList<String>();
 
         public void addNote(int index, String note) {
             System.out.println("Сейчас будет добавлена заметка [" + note + "] На позицию " + index);

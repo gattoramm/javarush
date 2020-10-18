@@ -3,10 +3,6 @@ package com.javarush.task.task16.task1614;
 import java.util.ArrayList;
 import java.util.List;
 
-/* 
-Обратный отсчет
-*/
-
 public class Solution {
     public static volatile List<String> list = new ArrayList<String>(5);
 
@@ -40,8 +36,8 @@ public class Solution {
         public void printCountdown() throws InterruptedException {
             //add your code here - добавь код тут
             countFrom--;
-            System.out.println(list.get(countFrom));
             Thread.sleep(500);
+            System.out.println(list.get(countFrom));
         }
     }
 }

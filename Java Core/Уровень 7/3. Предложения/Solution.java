@@ -1,11 +1,7 @@
 package com.javarush.task.task17.task1709;
 
-/* 
-Предложения
-*/
-
 public class Solution {
-    volatile public static int proposal = 0;
+    public static volatile int proposal = 0;
 
     public static void main(String[] args) {
         new AcceptProposal().start();
@@ -15,7 +11,6 @@ public class Solution {
     public static class MakeProposal extends Thread {
         @Override
         public void run() {
-
             int thisProposal = proposal;
 
             while (proposal < 10) {
@@ -27,24 +22,25 @@ public class Solution {
                     e.printStackTrace();
                 }
 
+
             }
         }
     }
 
     public static class AcceptProposal extends Thread {
-
         @Override
         public void run() {
-
             int thisProposal = proposal;
 
             while (thisProposal < 10) {
                 if (thisProposal != proposal) {
                     System.out.println("Принято предложение №" + proposal);
                     thisProposal = proposal;
+
                 }
 
             }
+
         }
     }
 }

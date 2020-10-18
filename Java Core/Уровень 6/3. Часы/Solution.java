@@ -1,9 +1,5 @@
 package com.javarush.task.task16.task1611;
 
-/* 
-Часы
-*/
-
 public class Solution {
     public static volatile boolean isStopped = false;
 
@@ -33,10 +29,10 @@ public class Solution {
 
         private void printTikTak() throws InterruptedException {
             //add your code here - добавь код тут
+            Thread.sleep(500);
             System.out.println("Tik");
             Thread.sleep(500);
             System.out.println("Tak");
-            Thread.sleep(500);
         }
     }
 }

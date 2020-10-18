@@ -3,10 +3,6 @@ package com.javarush.task.task16.task1607;
 import java.util.ArrayList;
 import java.util.List;
 
-/* 
-Horse Racing
-*/
-
 public class Solution {
 
     public static void main(String[] args) throws InterruptedException {
@@ -17,13 +13,12 @@ public class Solution {
 
     public static int calculateHorsesFinished(List<Horse> horses) throws InterruptedException {
         int finishedCount = 0;
-        //напишите тут ваш код
-        for (Horse item :horses) {
-            if (!item.isFinished()) {
-                System.out.println("Waiting for " + item.getName());
-                item.join();
-            } else {
+        for (Horse horse : horses) {
+            if (horse.isFinished()) {
                 finishedCount++;
+            } else {
+                System.out.println("Waiting for " + horse.getName());
+                horse.join();
             }
         }
         return finishedCount;
@@ -57,7 +52,7 @@ public class Solution {
 
         public void run() {
             String s = "";
-            for (int i = 0; i < 1001; i++) {   // Delay
+            for (int i = 0; i < 1001; i++) {   //delay
                 s += "" + i;
                 if (i == 1000) {
                     s = " has finished the race!";

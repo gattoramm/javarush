@@ -2,10 +2,6 @@ package com.javarush.task.task16.task1605;
 
 import java.util.Date;
 
-/* 
-Поговорим о музыке
-*/
-
 public class Solution {
     public static int delay = 1000;
 
@@ -47,10 +43,10 @@ public class Solution {
 
         @Override
         public void run() {
-            Date start = startPlaying();
+            Date date1 = startPlaying();
             sleepNSeconds(1);
-            Date stop = stopPlaying();
-            System.out.println("Playing " + (stop.getTime()-start.getTime()) + " ms");
+            Date date2 = stopPlaying();
+            System.out.println("Playing " + (date2.getTime() - date1.getTime()) + " ms");
         }
     }
 }

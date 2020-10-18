@@ -1,9 +1,5 @@
 package com.javarush.task.task17.task1716;
 
-/* 
-Синхронизированные методы
-*/
-
 public class Solution {
     private double param = Math.random();
     private StringBuilder sb = new StringBuilder();
@@ -49,5 +45,4 @@ public class Solution {
     public static void main(String[] args) {
 
     }
-
 }

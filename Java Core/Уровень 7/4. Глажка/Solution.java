@@ -1,8 +1,5 @@
 package com.javarush.task.task17.task1718;
 
-/* 
-Глажка
-*/
 
 public class Solution {
     public static void main(String[] args) {
@@ -16,11 +13,11 @@ public class Solution {
 
         public Person(String name) {
             super(name);
+
         }
 
         @Override
         public void run() {
-            //synchronized (this)
             synchronized (Iron.class) {
                 Iron iron = takeIron();
                 Clothes clothes = takeClothes();

@@ -1,9 +1,5 @@
 package com.javarush.task.task16.task1610;
 
-/* 
-Расставь вызовы методов join()
-*/
-
 public class Solution {
     public static void main(String[] args) throws InterruptedException {
         Cat cat1 = new Cat("Мурка");
@@ -33,6 +29,8 @@ public class Solution {
             System.out.println(getName() + " родила 2 котенка");
             try {
                 initAllKittens();
+                kitten1.join();
+                kitten2.join();
             } catch (InterruptedException e) {
             }
             System.out.println(getName() + ": Все котята в корзинке. " + getName() + " собрала их назад");
@@ -40,9 +38,7 @@ public class Solution {
 
         private void initAllKittens() throws InterruptedException {
             kitten1.start();
-            kitten1.join();
             kitten2.start();
-            kitten2.join();
         }
     }
 

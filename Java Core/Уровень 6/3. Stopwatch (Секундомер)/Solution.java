@@ -1,9 +1,5 @@
 package com.javarush.task.task16.task1612;
 
-/* 
-Stopwatch (Секундомер)
-*/
-
 public class Solution {
     public static volatile boolean isStopped = false;
 
@@ -40,8 +36,8 @@ public class Solution {
         private void doStep() throws InterruptedException {
             stepNumber++;
             //add your code here - добавь код тут
+            Thread.sleep(1000 / owner.getSpeed());
             System.out.println(owner.getName() + " делает шаг №" + stepNumber + "!");
-            Thread.sleep(1000/owner.speed);
         }
     }
 
