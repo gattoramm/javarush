@@ -1,44 +1,140 @@
-# **Уровень 6** - Знакомство с нитями: Thread, Runnable, start, join, interrupt, sleep
+# **Бонусное задание | 13 лекция | 6 уровень**
 
-## 1. Задачи на потоки
-* [My first thread](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/1.%20My%20first%20thread) (Easy)
-* [My second thread](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/1.%20My%20second%20thread) (Easy)
-* [Список и нити](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/1.%20%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%20%D0%B8%20%D0%BD%D0%B8%D1%82%D0%B8) (Medium)
-* [Вывод стек-трейса](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/1.%20%D0%92%D1%8B%D0%B2%D0%BE%D0%B4%20%D1%81%D1%82%D0%B5%D0%BA-%D1%82%D1%80%D0%B5%D0%B9%D1%81%D0%B0) (Easy)
-* [Поговорим о музыке](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/1.%20%D0%9F%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%D0%BC%20%D0%BE%20%D0%BC%D1%83%D0%B7%D1%8B%D0%BA%D0%B5) (Medium)
+* [Thread.currentThread - всегда возвращает текущую нить]() (Easy)
 
-## 2. Задача на join
-* [join: в нужное время в нужном месте](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/2.%20join%20%D0%B2%20%D0%BD%D1%83%D0%B6%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F%20%D0%B2%20%D0%BD%D1%83%D0%B6%D0%BD%D0%BE%D0%BC%20%D0%BC%D0%B5%D1%81%D1%82%D0%B5) (Easy)
-* [Horse Racing](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/2.%20Horse%20Racing) (Hard)
-* [Продвижение на политических дебатах](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/2.%20%D0%9F%D1%80%D0%BE%D0%B4%D0%B2%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D1%85%20%D0%B4%D0%B5%D0%B1%D0%B0%D1%82%D0%B0%D1%85) (Medium)
-* [Справедливость](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/2.%20%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%B5%D0%B4%D0%BB%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D1%8C) (Easy)
-* [Расставь вызовы методов join()](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/2.%20%D0%A0%D0%B0%D1%81%D1%81%D1%82%D0%B0%D0%B2%D1%8C%20%D0%B2%D1%8B%D0%B7%D0%BE%D0%B2%D1%8B%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%BE%D0%B2%20join()) (Medium)
+    * В методе printMsg присвой переменной t текущую нить.
+    * В методе printMsg после всех действий поставь задержку в 1 миллисекунду.   
 
-## 3. Задачи на sleep
-* [Часы](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/3.%20%D0%A7%D0%B0%D1%81%D1%8B) (Easy)
-* [Stopwatch (Секундомер)](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/3.%20Stopwatch%20(%D0%A1%D0%B5%D0%BA%D1%83%D0%BD%D0%B4%D0%BE%D0%BC%D0%B5%D1%80)) (Medium)
-* [Big Ben clock](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/3.%20Big%20Ben%20clock) (Medium)
-* [Обратный отсчет](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/3.%20%D0%9E%D0%B1%D1%80%D0%B0%D1%82%D0%BD%D1%8B%D0%B9%20%D0%BE%D1%82%D1%81%D1%87%D0%B5%D1%82) (Medium)
-* [Аэропорт](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/3.%20%D0%90%D1%8D%D1%80%D0%BE%D0%BF%D0%BE%D1%80%D1%82) (Easy)
+* [Последовательные выполнения нитей Ӏ Java Core: 6 уровень, 13 лекция]() (Easy)
 
-## 4. Задачи на interrupt
-* [Считаем секунды](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/4.%20%D0%A1%D1%87%D0%B8%D1%82%D0%B0%D0%B5%D0%BC%20%D1%81%D0%B5%D0%BA%D1%83%D0%BD%D0%B4%D1%8B) (Medium)
-* [Отсчет на гонках](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/4.%20%D0%9E%D1%82%D1%81%D1%87%D0%B5%D1%82%20%D0%BD%D0%B0%20%D0%B3%D0%BE%D0%BD%D0%BA%D0%B0%D1%85) (Hard)
-* [Снова interrupt](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/4.%20%D0%A1%D0%BD%D0%BE%D0%B2%D0%B0%20interrupt) (Easy)
-* [А без interrupt слабо?](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/4.%20%D0%90%20%D0%B1%D0%B5%D0%B7%20interrupt%20%D1%81%D0%BB%D0%B0%D0%B1%D0%BE) (Medium)
-* [Один для всех, все - для одного](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/4.%20%D0%9E%D0%B4%D0%B8%D0%BD%20%D0%B4%D0%BB%D1%8F%20%D0%B2%D1%81%D0%B5%D1%85%2C%20%D0%B2%D1%81%D0%B5%20-%20%D0%B4%D0%BB%D1%8F%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%B3%D0%BE) (Medium)
+    * В методе run после всех действий поставь задержку в 10 миллисекунд. Выведи "Нить прервана", если нить будет прервана.
+    * Сделай так, чтобы все нити выполнялись последовательно: сначала для нити №1 отсчет с COUNT до 1, потом для нити №2 с COUNT до 1 и т.д.
 
-## 5. Бонусное задание | 13 лекция | 6 уровень
-* [Thread.currentThread - всегда возвращает текущую нить](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/5.%20Thread.currentThread%20-%20%D0%B2%D1%81%D0%B5%D0%B3%D0%B4%D0%B0%20%D0%B2%D0%BE%D0%B7%D0%B2%D1%80%D0%B0%D1%89%D0%B0%D0%B5%D1%82%20%D1%82%D0%B5%D0%BA%D1%83%D1%89%D1%83%D1%8E%20%D0%BD%D0%B8%D1%82%D1%8C) (Easy)
-* [Последовательные выполнения нитей Ӏ Java Core: 6 уровень, 13 лекция](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/5.%20%D0%9F%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BD%D0%B8%D1%82%D0%B5%D0%B9%20%D3%80%20Java%20Core%206%20%D1%83%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%2013%20%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D1%8F) (Easy)
-* [Рекурсивное создание нитей](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/5.%20%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D0%BE%D0%B5%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BD%D0%B8%D1%82%D0%B5%D0%B9) (Hard)
-* [Последовательные выполнения нитей ӀӀ Java Core: 6 уровень, 13 лекция](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/5.%20%D0%9F%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BD%D0%B8%D1%82%D0%B5%D0%B9%20%D3%80%D3%80%20Java%20Core%206%20%D1%83%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%2C13%20%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D1%8F) (Easy)
-* [Взаимная блокировка](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/5.%20%D0%92%D0%B7%D0%B0%D0%B8%D0%BC%D0%BD%D0%B0%D1%8F%20%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0) (Easy)
-* [Создание по образцу](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/5.%20%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BF%D0%BE%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D1%86%D1%83) (Medium)
-* [Поиграем?](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/5.%20%D0%9F%D0%BE%D0%B8%D0%B3%D1%80%D0%B0%D0%B5%D0%BC) (Hard)
-* [Кто первый встал - того и тапки](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/5.%20%D0%9A%D1%82%D0%BE%20%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B9%20%D0%B2%D1%81%D1%82%D0%B0%D0%BB%20-%20%D1%82%D0%BE%D0%B3%D0%BE%20%D0%B8%20%D1%82%D0%B0%D0%BF%D0%BA%D0%B8) (Hard)
-* [Только по-очереди!](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/5.%20%D0%A2%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D0%BF%D0%BE-%D0%BE%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D0%B8) (Medium)
-* [Последовательный вывод файлов](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/5.%20%D0%9F%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4%20%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2) (Hard)
-* [Factory method pattern](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/5.%20Factory%20method%20pattern) (Hard)
-* [Клубок](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/5.%20%D0%9A%D0%BB%D1%83%D0%B1%D0%BE%D0%BA) (Hard)
-* [Отдебажим все на свете](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%206/5.%20%D0%9E%D1%82%D0%B4%D0%B5%D0%B1%D0%B0%D0%B6%D0%B8%D0%BC%20%D0%B2%D1%81%D0%B5%20%D0%BD%D0%B0%20%D1%81%D0%B2%D0%B5%D1%82%D0%B5) (Hard)
+* [Рекурсивное создание нитей]() (Hard)
+
+    * Измени класс GenerateThread так, чтобы он стал нитью.
+    * Создай конструктор GenerateThread, который должен:
+        * Вызвать конструктор суперкласса с параметром String - номером созданной нити. Используй createdThreadCount.
+        * Запустить текущую нить.
+        * Номер первой нити должен начинается с 1.
+    * Переопредели метод toString, для этого внутри GenerateThread нажми Alt+Insert -> Override Methods. Начни печатать toString.
+        * Метод toString должен возвращать № текущей нити и слово " created". Используй getName().
+
+* [Последовательные выполнения нитей ӀӀ Java Core: 6 уровень, 13 лекция]() (Easy)
+
+    * Разберись, что делает программа.
+    * Сделай так, чтоб программа сначала выводила результат нити, а когда нить завершится - продолжила метод main.
+    * Пример выходных данных:
+
+            * inside MyThread 0
+            * inside MyThread 1
+            * ...
+            * inside MyThread 9
+            * inside main 0
+            * inside main 1
+            * ...
+            * inside main 9
+
+* [Взаимная блокировка]() (Easy)
+
+    * Разберись, как работает программа.
+    * Не меняя классы T1 и T2 сделай так, чтобы их нити завершились, не обязательно успешно.
+    * Метод sleep не использовать.
+
+* [Создание по образцу]() (Medium)
+
+    * Разберись, как работает программа. По образу и подобию CountdownRunnable создай нить CountUpRunnable, которая выводит значения в нормальном порядке - от 1 до number.
+
+* [Поиграем?]() (Hard)
+
+    Три человека играют в игру. Каждый игрок(Gamer) характеризуется двумя параметрами: фамилией(name) и количеством действий в секунду (rating). Нужно вывести в консоль ход игры и определить победителя и проигравших. Итак...
+    * Разберись, что делает программа.
+        * List steps хранит последовательность действий, которое каждый игрок выполняет от 0 до последнего.
+        * isWinnerFound показывает, найден победитель или нет.
+        * Метод sleep выбрасывает InterruptedException и принимает параметр типа long.
+        * Игроки играют независимо друг от друга.
+    * Реализуй логику метода run так, чтобы для каждого игрока:
+        * Через равные интервалы времени (1000ms / rating) выводились в консоль действия, описанные в steps.
+        * Любой текст должен начинаться с фамилии игрока (метод getName()), потом следовать двоеточие, а затем сам текст.
+
+            Пример:
+
+                Ivanov:Начало игры
+
+        * Когда игрок выполнит все действия из steps, то он считается победителем. Выведите getName() + ":победитель!"
+        * Когда найден победитель, то игра останавливается, и остальные игроки считаются побежденными. Выведите для них getName() + ":проиграл"
+
+* [Кто первый встал - того и тапки]() (Hard)
+
+    * Разберись, что делает программа.
+        * Каждая нить должна читать с консоли строки. Используй готовый static BufferedReader reader.
+        * Используй AtomicInteger readStringCount, чтобы посчитать, сколько строк уже считано с консоли всеми нитями.
+    * Реализуй логику метода run:
+        * Пока нить не прервана (!isInterrupted) читай с консоли строки и добавляй их в поле List result.
+        * Используй readStringCount для подсчета уже считанных с консоли строк.
+
+* [Только по-очереди!]() (Medium)
+
+    * В классе Solution создать public static класс нити Read3Strings унаследовавшись от Thread.
+    * В методе run реализовать чтение с консоли трех строк.
+    * Три подряд введенных строки должны считываться в одной нити и объединяться в одну строку через пробел.
+    * В методе main вывести результат для каждой нити.
+    * Используй join.
+
+        Пример:
+
+        Входные данные:
+
+            a
+            b
+            c
+            d
+            e
+            f
+
+        Выходные данные:
+
+            a b c
+            d e f
+
+* [Последовательный вывод файлов]() (Hard)
+    >
+    * Разберись, что делает программа.
+    * В статическом блоке считай 2 имени файла firstFileName и secondFileName.
+    * Внутри класса Solution создай нить public static ReadFileThread, которая реализует интерфейс ReadFileInterface (Подумай, что больше подходит - Thread или Runnable).
+        * Метод setFileName должен устанавливать имя файла, из которого будет читаться содержимое.
+        * Метод getFileContent должен возвращать содержимое файла.
+        * В методе run считай содержимое файла, закрой поток. Раздели пробелом строки файла.
+    * Подумай, в каком месте нужно подождать окончания работы нити, чтобы обеспечить последовательный вывод файлов.
+        * Для этого добавь вызов соответствующего метода.
+
+        Ожидаемый вывод:
+
+            [все тело первого файла]
+            [все тело второго файла]
+
+* [Factory method pattern]() (Hard)
+    >
+    * Внимательно посмотри, какие классы у тебя есть.
+    * В отдельных файлах в пакете common создай классы JpgReader, PngReader, BmpReader, которые реализуют интерфейс ImageReader.
+    * В отдельном файле в основном пакете создай класс ImageReaderFactory с одним методом. 1. Подумай, как он должен называться. 2. Подумай, какие модификаторы должны быть у этого метода.
+    * Этот метод должен: 1. Для каждого значения из ImageTypes возвращать соответствующий Reader, например, для ImageTypes.JPG - JpgReader; 2. Если передан неправильный параметр, то выбрасывать исключение IllegalArgumentException("Неизвестный тип картинки").
+
+* [Клубок]() (Hard)
+    >
+    * Создай 5 различных своих нитей c отличным от Thread типом: 1. Нить 1 должна бесконечно выполняться; 2. Нить 2 должна выводить "InterruptedException" при возникновении исключения InterruptedException; 3. Нить 3 должна каждые полсекунды выводить "Ура"; 4. Нить 4 должна реализовать интерфейс Message, при вызове метода showWarning нить должна останавливаться; 5. Нить 5 должна читать с консоли числа пока не введено слово "N", а потом вывести в консоль сумму введенных чисел.
+    * В статическом блоке добавь свои нити в List threads в перечисленном порядке.
+    * Нити не должны стартовать автоматически.
+
+* [Отдебажим все на свете]() (Hard)
+    >
+    * Разобраться, что делает программа.
+    * Почитать про UncaughtExceptionHandler - это важно.
+    * Еще раз внимательно посмотреть программу.
+    * Разобраться - продебажить - почему наш OurUncaughtExceptionHandler не срабатывает.
+    * Исправить ошибку, т.е. все должно работать. :)
+
+    Ожидаемый результат в произвольном порядке:
+
+        Нить 1: My exception message
+        Нить 2: My exception message
