@@ -1,8 +1,6 @@
 # Уровень 7 - Знакомство с нитями: synchronized, volatile, yield
-<<<<<<< HEAD
+
 [link](https://javarush.ru/quests/lectures?quest=QUEST_JAVA_CORE&level=7)
-=======
->>>>>>> 26b1794702dd678669d4ffe8ae6d18238696f440
 
 ## 1. Задачи на общий ресурс — вывод в консоль
 * [Заметки](https://github.com/gattoramm/javarush/tree/main/Java%20Core/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C%207/1.%20%D0%97%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B8) (Medium)
