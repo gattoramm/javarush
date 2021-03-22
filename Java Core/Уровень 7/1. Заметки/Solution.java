@@ -3,29 +3,26 @@ package com.javarush.task.task17.task1701;
 import java.util.ArrayList;
 import java.util.List;
 
-/* 
-Заметки
-*/
-
 public class Solution {
-    public static class NoteThread extends Thread {
-        @Override
-        public void run() {
-            for(int index = 0; index < 1000; index++) {
-                Note.addNote(getName() + "-Note" + index);
-                try {
-                    Thread.sleep(1);
-                } catch (InterruptedException interruptedException) {
-                    interruptedException.printStackTrace();
-                }
-                Note.removeNote(getName());
-            }
-        }
-    }
-
     public static void main(String[] args) {
         new NoteThread().start();
         new NoteThread().start();
+    }
+
+    public static class NoteThread extends Thread {
+        public void run() {
+            for (int i = 0; i < 1000; i++) {
+                Note.addNote(getName() + "-Note" + i);
+
+                try {
+                    Thread.sleep(1);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+                Note.removeNote(getName());
+            }
+        }
     }
 
     public static class Note {

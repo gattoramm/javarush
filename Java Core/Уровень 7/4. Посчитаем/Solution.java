@@ -1,9 +1,5 @@
 package com.javarush.task.task17.task1722;
 
-/* 
-Посчитаем
-*/
-
 public class Solution {
     public static void main(String[] args) throws InterruptedException {
         Counter counter1 = new Counter();
@@ -11,10 +7,15 @@ public class Solution {
         Counter counter3 = new Counter();
         Counter counter4 = new Counter();
 
-        counter1.start(); counter1.join();
-        counter2.start(); counter2.join();
-        counter3.start(); counter3.join();
-        counter4.start(); counter4.join();
+        counter1.start();
+        counter2.start();
+        counter3.start();
+        counter4.start();
+
+        counter1.join();
+        counter2.join();
+        counter3.join();
+        counter4.join();
 
         for (int i = 1; i <= 100; i++) {
             if (values[i] != 1) {
@@ -48,7 +49,6 @@ public class Solution {
                 synchronized (Solution.class) {
                     incrementCount();
                     values[getCount()]++;
-                    Thread.yield();
                 }
 
                 try {

@@ -3,10 +3,6 @@ package com.javarush.task.task17.task1704;
 import java.util.ArrayList;
 import java.util.List;
 
-/* 
-Синхронизированные заметки 2
-*/
-
 public class Solution {
 
     public static void main(String[] args) {
@@ -15,7 +11,7 @@ public class Solution {
 
     public static class Note {
 
-        public final List<String> notes = new ArrayList<String>();
+        public final List<String> notes = new ArrayList<>();
 
         public synchronized void addNote(int index, String note) {
             System.out.println("Сейчас будет добавлена заметка [" + note + "] На позицию " + index);

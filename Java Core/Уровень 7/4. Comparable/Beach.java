@@ -1,10 +1,6 @@
 package com.javarush.task.task17.task1714;
 
-/* 
-Comparable
-*/
-
-public class Beach implements Comparable<Beach>{
+public class Beach implements Comparable<Beach> {
     private String name;      //название
     private float distance;   //расстояние
     private int quality;    //качество
@@ -43,15 +39,10 @@ public class Beach implements Comparable<Beach>{
 
     }
 
-    public synchronized int compareTo(Beach o){
-        int result =  quality - o.quality;
-        if(result != 0)
-            return result;
-
-        result =  (int) (o.distance - distance);
-        if(result != 0)
-            return result;
-
-        return 0;
+    @Override
+    public synchronized int compareTo(Beach obj) {
+        int distanceParam = (int) (distance - obj.getDistance());
+        int qualityParam = quality - obj.getQuality();
+        return 10000 * name.compareTo(obj.getName()) + 100 * distanceParam + qualityParam;
     }
 }

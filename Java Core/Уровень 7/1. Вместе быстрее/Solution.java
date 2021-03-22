@@ -3,9 +3,6 @@ package com.javarush.task.task17.task1702;
 import java.util.ArrayList;
 import java.util.List;
 
-/* 
-Вместе быстрее? Ща проверим :)
-*/
 
 public class Solution {
     public static int threadCount = 10;
@@ -33,6 +30,13 @@ public class Solution {
         System.out.println((result.toString()).equals(expectedResult.toString()));
     }
 
+    public static class SortThread extends Thread {
+        @Override
+        public void run() {
+            sort(testArray);
+        }
+    }
+
     public static void initThreads() throws InterruptedException {
         List<Thread> threads = new ArrayList<Thread>(threadCount);
         for (int i = 0; i < threadCount; i++) threads.add(new SortThread());
@@ -51,12 +55,4 @@ public class Solution {
             }
         }
     }
-
-    public static class SortThread extends Thread {
-        @Override
-        public void run() {
-            sort(testArray);
-        }
-    }
 }
-
